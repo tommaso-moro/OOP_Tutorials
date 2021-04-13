@@ -1,0 +1,1 @@
+enum DataStorageArrayConfig { RAID_1, RAID_5 };
