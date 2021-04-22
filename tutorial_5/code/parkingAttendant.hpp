@@ -13,9 +13,26 @@ class ParkingAttendant {
         std::vector<ParkingFine*> finesIssued;
 
     public:
+        //constructor
         ParkingAttendant(std::string name, int badgeNumber);
+
+        //copy constructor
+        ParkingAttendant(ParkingAttendant const& otherParkingAttendant);
+
+        //assignment operator overload
+        ParkingAttendant& operator=(ParkingAttendant const& otherParkingAttendant);
+
+        //destructor
+        virtual ~ParkingAttendant();
+
+        //methods
         void issueFine(ParkingFine* const parkingFine);
         virtual float calculateSalary() = 0;
+
+        //getters
+        std::string getName() const;
+        int getBadgeNumber() const;
+        float getSalary() const;
 };
 
 #endif

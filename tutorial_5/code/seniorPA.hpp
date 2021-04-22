@@ -4,6 +4,7 @@
 #include<string>
 
 #include"parkingAttendant.hpp"
+#include "helper.hpp"
 
 class SeniorPA : public ParkingAttendant {
     /* inherits:
@@ -17,8 +18,14 @@ class SeniorPA : public ParkingAttendant {
         //constructor
         SeniorPA(std::string name, int badgeNumber);
 
-        //override calculateSalary()
-        float calculateSalary();
+        //assignment operator overload
+        SeniorPA& operator=(SeniorPA const& otherSeniorPA);
+
+        //destructor
+        ~SeniorPA() override;
+
+        //methods
+        float calculateSalary() override;
 
 };
 

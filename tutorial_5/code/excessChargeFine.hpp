@@ -13,7 +13,7 @@ class ExcessChargeFine : public ParkingFine {
         - int amount;
     */
     private:
-    int overstayMinutes;
+        int overstayMinutes;
 
 public:
     ExcessChargeFine(const std::string date, const std::string time, const std::string regNumber, int offenceCode,

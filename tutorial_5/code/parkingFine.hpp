@@ -9,10 +9,20 @@ class ParkingFine {
         std::string time;
         std::string regNumber;
         int offenceCode;
-        int amount;
+        float amount;
 
     public:
+        //constructor
         ParkingFine(std::string date, std::string time, std::string regNumber, int offenceCode);
+
+        //copy constructor
+        ParkingFine(ParkingFine const& otherParkingFine);
+
+        //assignment operator overload
+        ParkingFine& operator=(ParkingFine const& otherParkingFine);
+
+        //destructor
+        virtual ~ParkingFine();
 
         //getter
         int getAmount() const;

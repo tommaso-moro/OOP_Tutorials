@@ -14,8 +14,17 @@ class JuniorPA : public ParkingAttendant {
     */
 
     public:
+        //constructor
         JuniorPA(std::string name, int badgeNumber);
-        float calculateSalary();
+
+        //assignment operator overload
+        JuniorPA& operator=(JuniorPA const& otherJuniorPA);
+
+        //destructor
+        ~JuniorPA() override;
+
+        //methods
+        float calculateSalary() override;
 
 };
 
