@@ -1,8 +1,8 @@
-answer2: answer2.o
-	g++ -Wall -g answer2.o -o answer2
+newsaggregator: newsaggregator.o
+	g++ -Wall -g newsaggregator.o -o newsaggregator
 
-answer2.o: answer2.cpp
-	g++ -Wall -g -c answer2.cpp
+newsaggregator.o: newsaggregator.cpp
+	g++ -Wall -g -c newsaggregator.cpp
 
 clean:
 	rm -f *.o clean
