@@ -1,8 +1,8 @@
-answer1: answer1.o
-	g++ -Wall -g answer1.o -o answer1
+answer2: answer2.o
+	g++ -Wall -g answer2.o -o answer2
 
-answer1.o: answer1.cpp
-	g++ -Wall -g -c answer1.cpp
+answer2.o: answer2.cpp
+	g++ -Wall -g -c answer2.cpp
 
 clean:
 	rm -f *.o clean
