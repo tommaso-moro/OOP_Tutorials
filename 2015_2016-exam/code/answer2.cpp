@@ -131,8 +131,7 @@ public:
     int getNumOfAFs() const {
         return applicationForms.size();
     }
-    //count AFs
-    //remove AFs below 77
+
 };
 
 int main() {
